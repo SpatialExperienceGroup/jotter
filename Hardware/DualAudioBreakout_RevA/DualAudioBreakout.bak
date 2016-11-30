@@ -1,0 +1,246 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:myParts
+LIBS:ams1117-3
+LIBS:esp8266-12e
+LIBS:apa102c
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Dual Audio Breakout"
+Date "2016-10-17"
+Rev "A"
+Comp "MITTO DESIGN LLC"
+Comment1 "Matthew Swarts"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SPH0645LM4H-B U1
+U 1 1 5805DDDC
+P 5325 2800
+F 0 "U1" H 5150 2800 60  0000 C CNN
+F 1 "SPH0645LM4H-B" V 4950 2800 60  0000 C CNN
+F 2 "MyKiCadParts:SPH0645LM4H-B" H 5325 2800 60  0001 C CNN
+F 3 "" H 5325 2800 60  0000 C CNN
+	1    5325 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPH0645LM4H-B U2
+U 1 1 5805DE88
+P 5325 4425
+F 0 "U2" H 5150 4425 60  0000 C CNN
+F 1 "SPH0645LM4H-B" V 4950 4425 60  0000 C CNN
+F 2 "MyKiCadParts:SPH0645LM4H-B" H 5325 4425 60  0001 C CNN
+F 3 "" H 5325 4425 60  0000 C CNN
+	1    5325 4425
+	1    0    0    -1  
+$EndComp
+Text GLabel 5325 2275 1    60   Input ~ 0
+VCC
+Text GLabel 5325 3900 1    60   Input ~ 0
+VCC
+Text GLabel 5325 3325 3    60   Input ~ 0
+GND
+Text GLabel 5325 4950 3    60   Input ~ 0
+GND
+$Comp
+L CP1_Small C3
+U 1 1 580605B0
+P 4625 2800
+F 0 "C3" H 4635 2870 50  0000 L CNN
+F 1 "200pF" H 4635 2720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4625 2800 50  0001 C CNN
+F 3 "" H 4625 2800 50  0000 C CNN
+	1    4625 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C1
+U 1 1 580607BC
+P 4325 2800
+F 0 "C1" H 4335 2870 50  0000 L CNN
+F 1 "0.1uF" H 4335 2720 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4325 2800 50  0001 C CNN
+F 3 "" H 4325 2800 50  0000 C CNN
+	1    4325 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C4
+U 1 1 580616C3
+P 4625 4425
+F 0 "C4" H 4635 4495 50  0000 L CNN
+F 1 "200pF" H 4635 4345 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4625 4425 50  0001 C CNN
+F 3 "" H 4625 4425 50  0000 C CNN
+	1    4625 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C2
+U 1 1 580616C9
+P 4325 4425
+F 0 "C2" H 4335 4495 50  0000 L CNN
+F 1 "0.1uF" H 4335 4345 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4325 4425 50  0001 C CNN
+F 3 "" H 4325 4425 50  0000 C CNN
+	1    4325 4425
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 3325 0    60   Input ~ 0
+VCC
+Text GLabel 6250 3825 0    60   Input ~ 0
+GND
+Text GLabel 6250 3625 0    60   Input ~ 0
+DIN
+Text GLabel 5950 3525 0    60   Input ~ 0
+BCLK
+Text GLabel 5950 3425 0    60   Input ~ 0
+WS
+$Comp
+L R R3
+U 1 1 58062793
+P 6100 3425
+F 0 "R3" V 6180 3425 50  0000 C CNN
+F 1 "27" V 6100 3425 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6030 3425 50  0001 C CNN
+F 3 "" H 6100 3425 50  0000 C CNN
+	1    6100 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 580629D2
+P 6100 3525
+F 0 "R4" V 6180 3525 50  0000 C CNN
+F 1 "27" V 6100 3525 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6030 3525 50  0001 C CNN
+F 3 "" H 6100 3525 50  0000 C CNN
+	1    6100 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 58062CFD
+P 6000 2850
+F 0 "R1" V 6080 2850 50  0000 C CNN
+F 1 "27" V 6000 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5930 2850 50  0001 C CNN
+F 3 "" H 6000 2850 50  0000 C CNN
+	1    6000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58062E22
+P 6000 4475
+F 0 "R2" V 6080 4475 50  0000 C CNN
+F 1 "27" V 6000 4475 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5930 4475 50  0001 C CNN
+F 3 "" H 6000 4475 50  0000 C CNN
+	1    6000 4475
+	0    1    1    0   
+$EndComp
+Text GLabel 6150 2850 2    60   Input ~ 0
+DIN
+Text GLabel 6150 4475 2    60   Input ~ 0
+DIN
+Text GLabel 5850 2650 2    60   Input ~ 0
+WS
+Text GLabel 5850 4275 2    60   Input ~ 0
+WS
+Text GLabel 5850 2750 2    60   Input ~ 0
+BCLK
+Text GLabel 5850 4375 2    60   Input ~ 0
+BCLK
+Wire Wire Line
+	4625 2900 4625 3325
+Wire Wire Line
+	4325 3325 5325 3325
+Wire Wire Line
+	4325 2900 4325 3325
+Connection ~ 4625 3325
+Wire Wire Line
+	4625 2700 4625 2275
+Wire Wire Line
+	4325 2275 6500 2275
+Wire Wire Line
+	4325 2700 4325 2275
+Connection ~ 4625 2275
+Wire Wire Line
+	4325 3900 5325 3900
+Wire Wire Line
+	4625 3900 4625 4325
+Wire Wire Line
+	4325 3900 4325 4325
+Connection ~ 4625 3900
+Wire Wire Line
+	4625 4525 4625 4950
+Wire Wire Line
+	4325 4950 5850 4950
+Wire Wire Line
+	4325 4525 4325 4950
+Connection ~ 4625 4950
+Wire Wire Line
+	5850 2950 6500 2950
+Wire Wire Line
+	6500 2950 6500 2275
+Connection ~ 5325 2275
+Wire Wire Line
+	5850 4950 5850 4575
+Connection ~ 5325 4950
+$Comp
+L CONN_01X06 P1
+U 1 1 58065C96
+P 6450 3575
+F 0 "P1" H 6450 3925 50  0000 C CNN
+F 1 "CONN_01X06" V 6550 3575 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 6450 3575 50  0001 C CNN
+F 3 "" H 6450 3575 50  0000 C CNN
+	1    6450 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3525 6250 3550
+Wire Wire Line
+	6250 3550 6275 3550
+Wire Wire Line
+	6275 3550 6275 3700
+Wire Wire Line
+	6275 3700 6250 3700
+Wire Wire Line
+	6250 3700 6250 3725
+$EndSCHEMATC
