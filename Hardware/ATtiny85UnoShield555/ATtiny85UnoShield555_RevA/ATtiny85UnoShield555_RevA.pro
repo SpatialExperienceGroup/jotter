@@ -1,4 +1,4 @@
-update=4/7/2017 10:50:34 AM
+update=5/9/2017 7:52:08 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,18 +57,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=C:/Sync/Projects/KiCad/KiCadParts.pretty/myParts
-LibName31=C:/Sync/Projects/KiCad/KiCadParts.pretty/ams1117-3
-LibName32=C:/Sync/Projects/KiCad/KiCadParts.pretty/esp8266-12e
-LibName33=C:/Sync/Projects/KiCad/KiCadParts.pretty/apa102c
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
